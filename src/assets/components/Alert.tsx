@@ -1,11 +1,12 @@
+import { ReactNode } from "react";
 
-
-import React from 'react'
-
-const Alert = () => {
+interface Promp {
+  children: ReactNode;
+}
+const Alert = ({children}: Promp) => {
   return (
-    <div>
-     Alert 
+    <div className="alert alert-primary">
+     {children} 
     </div>
   )
 }
